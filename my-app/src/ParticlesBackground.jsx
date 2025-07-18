@@ -15,7 +15,7 @@ const ParticlesBackground = () => {
             background: {
                 color: '#0e1524ff'
             },
-            fpsLimit: 100,
+            fpsLimit: 150,
             interactivity: {
                 events: {
                     onHover: {
@@ -29,7 +29,7 @@ const ParticlesBackground = () => {
                 color: { value: '#62dff0ff' },
                 links: {
                     color: '#ffffff',
-                    distance: 200,
+                    distance: 100,
                     enable: true,
                     opacity: 0.5,
                     width: 1
