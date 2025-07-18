@@ -218,3 +218,68 @@ footer {
     font-weight: normal;
     font-style: normal;
 }
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    #about h2 {
+        font-size: 26px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .swiper {
+        padding: 0 10px;
+    }
+
+    .brands img {
+        width: 70px;
+    }
+
+    .floating-whatsapp {
+        bottom: 20px;
+        right: 15px;
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
