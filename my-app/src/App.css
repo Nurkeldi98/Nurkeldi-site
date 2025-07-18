@@ -1,0 +1,220 @@
+html, body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+header {
+    background-color: #008cba;
+    color: white;
+    padding: 25px;
+    text-align: center;
+
+}
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+nav a {
+    color: white;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+} 
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+section:nth-child(even) {
+  background-color: #edf3f7;
+}
+
+#about {
+    background:#edf3f7;
+    position: relative;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to top, white, #002B56);
+    z-index: 1;
+}
+
+#about h2 {
+    font-size:35px;
+}
+#about p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color:#edf3f7;
+    border-radius: 10px;
+    box-shadow: 0 0 15px, rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #000;
+    flex-grow: 1;
+}
+
+.card button {
+    margin: 15px auto 20px;
+    padding: 10px 20px;
+    background-color: #1e7fa0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #134d88;
+}
+
+
+
+#gallery {
+    text-align: center;
+    background-color: #edf3f7;
+    position: relative;
+}
+
+
+#gallery img {
+    height: 250px;
+    width: auto;
+}
+
+
+.swiper {
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf3f7;
+    height: auto;
+}
+
+
+img {
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px;
+}
+.brands img {
+    width: 90px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    
+}
+.brands img:hover {
+    transform: scale(1.2);
+}
+
+#contact {
+    position: relative;
+    background-color: #edf3f7;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.icons a:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.floating-whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.floating-whatsapp:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color:#cadded;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+
+@font-face {
+    font-family: 'Stalinist One';
+    src: url('fonts/StalinistOne-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
